@@ -5,6 +5,8 @@
    <link rel="stylesheet" type="text/css" href="gentleman.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
 
+   <link href="css/layout.css" rel="stylesheet" type="text/css" />
+   <link href="css/modal.css" rel="stylesheet" type="text/css" />
    <style>
        #slidy-container { width: 100%; overflow: hidden; margin: 0 auto;}
    </style>
@@ -13,7 +15,8 @@
    <script src="js/prefixfree.min.js"></script>
 
 </head>
-<body><!-- head manu--><!-- head manu--><!-- head manu--><!-- head manu--><!-- head manu--><!-- head manu--><!-- head manu--><!-- head manu--><!-- head manu-->
+<body>
+    <!-- head manu--><!-- head manu--><!-- head manu--><!-- head manu--><!-- head manu--><!-- head manu--><!-- head manu--><!-- head manu--><!-- head manu-->
     <ul class="menu-bar">
      <a>
         <li class="menu-list-space"></li>
@@ -41,12 +44,71 @@
     </a>
 
     <a href="#register">
-        <li class="menu-list-rl">ลงทะเบียน</li>
+        <li class="menu-list-rl"><a href="#login_form" id="login_pop">เข้าสู่ระบบ</a></li>
     </a>
     <a href="#login">
-        <li class="menu-list-rl">เข้าสู่ระบบ</li>
+        <li class="menu-list-rl"><a href="#join_form" id="join_pop">สมัครสมาชิก</a></li>
     </a>
 </ul>
+
+<!-- popup form #1 -->
+<a href="#x" class="overlay" id="login_form"></a>
+<div class="popup">
+    <h2>ยินดีต้อนรับ!</h2>
+    <p>กรุณากรอก ชื่อผู้ใช้ และ รหัสผ่าน ของคุณ</p>
+    <div>
+        <label for="login">ชื่อผู้ใช้</label>
+        <input type="text" id="login" value="" />
+    </div>
+    <div>
+        <label for="password">รหัสผ่าน</label>
+        <input type="password" id="password" value="" />
+    </div>
+    <input type="button" value="เข้าสู่ระบบ" />
+
+    <a class="close" href="#close"></a>
+</div>
+
+<!-- popup form #2 -->
+<a href="#x" class="overlay" id="join_form"></a>
+<div class="popup">
+    <h2>สมัครสมาชิก</h2>
+    <p>กรุณากรอกรายละเอียดของคุณที่นี่</p>
+    <div class="row">
+        <div class="col s6">
+            <label for="email">ชื่อผู้ใช้</label>
+            <input type="text" id="email" value="" />
+        </div>
+        <div class="col s6">
+            <label for="pass">รหัสผ่าน</label>
+            <input type="password" id="pass" value="" />
+        </div>
+        <div class="col s6">
+            <label for="firstname">ชื่อ</label>
+            <input type="text" id="firstname" value="" />
+        </div>
+        <div class="col s6">
+            <label for="lastname">นามสกุล</label>
+            <input type="text" id="lastname" value="" />
+        </div>
+        <div class="col s6">
+            <label for="Phone number">เบอร์โทรศัพท์</label>
+            <input type="tel" pattern="[0-9]{10}" id="tel" title="Phone Number?!?!" value="" />
+        </div>
+        <div class="col s6">
+            <label for="email">อีเมล</label>
+            <input type="email" id="email" value="" />
+        </div>
+        <div>
+            <label for="address">ที่อยู่</label>
+            <textarea rows="4" cols="22" name="address" form="usrform"></textarea>
+        </div>
+
+        <input type="button" value="สมัครสมาชิก" />
+
+        <a class="close" href="#close"></a>
+    </div>
+</div>
 
 <!-- body --><!-- body --><!-- body --><!-- body --><!-- body --><!-- body --><!-- body --><!-- body --><!-- body --><!-- body --><!-- body -->
 <div class="container_body_manu">
@@ -122,33 +184,33 @@
            <div class="right-manu">XXXXXXXX</div>
        </div>
        <div class="col s9 m4">
-            <div class="right-manu">XXXXXXXX</div>
-        </div>
-        <div class="col s9 m4">
-            <div class="right-manu">XXXXXXXX</div>
-        </div>
-        <div class="col s9 m4">
-           <div class="right-manu">XXXXXXXX</div>
-       </div>
-       <div class="col s9 m4">
-            <div class="right-manu">XXXXXXXX</div>
-        </div>
-        <div class="col s9 m4">
-            <div class="right-manu">XXXXXXXX</div>
-        </div>
-        <div class="col s9 m4">
-           <div class="right-manu">XXXXXXXX</div>
-       </div>
-       <div class="col s9 m4">
-            <div class="right-manu">XXXXXXXX</div>
-        </div>
-        <div class="col s9 m4">
-            <div class="right-manu">XXXXXXXX</div>
-        </div>
-        <div class="col s9 m4">
-           <div class="right-manu">XXXXXXXX</div>
-       </div>
+        <div class="right-manu">XXXXXXXX</div>
+    </div>
+    <div class="col s9 m4">
+        <div class="right-manu">XXXXXXXX</div>
+    </div>
+    <div class="col s9 m4">
+       <div class="right-manu">XXXXXXXX</div>
    </div>
+   <div class="col s9 m4">
+    <div class="right-manu">XXXXXXXX</div>
+</div>
+<div class="col s9 m4">
+    <div class="right-manu">XXXXXXXX</div>
+</div>
+<div class="col s9 m4">
+   <div class="right-manu">XXXXXXXX</div>
+</div>
+<div class="col s9 m4">
+    <div class="right-manu">XXXXXXXX</div>
+</div>
+<div class="col s9 m4">
+    <div class="right-manu">XXXXXXXX</div>
+</div>
+<div class="col s9 m4">
+   <div class="right-manu">XXXXXXXX</div>
+</div>
+</div>
 </div>
 </div>
 
