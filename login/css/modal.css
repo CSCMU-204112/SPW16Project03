@@ -1,8 +1,8 @@
 /* 
 * @Author: OAT
 * @Date:   2016-05-26 22:02:51
-* @Last Modified by:   OAT
-* @Last Modified time: 2016-05-26 22:51:01
+* @Last Modified by:   wichayapoka
+* @Last Modified time: 2016-05-27 00:32:06
 */
 .main {
     width: 800px;
@@ -111,7 +111,8 @@ a#login_pop:hover, a#join_pop:hover {
     text-align: left;
     width: 120px;
 }
-.popup input[type="text"], .popup input[type="password"] {
+.popup input[type="text"], .popup input[type="password"], 
+.popup input[type="email"], .popup input[type="tel"] {
     /*border: 1px solid;*/
     /*border-color: #999 #ccc #ccc;*/
     margin: 0;
