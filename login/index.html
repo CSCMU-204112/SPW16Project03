@@ -1,0 +1,64 @@
+<html lang="en" >
+    <head>
+        <meta charset="utf-8" />
+        <link href="css/layout.css" rel="stylesheet" type="text/css" />
+        <link href="css/modal.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <header>
+        </header>
+
+        <!-- panel with buttons -->
+        <div class="main">
+            <div class="panel">
+                <a href="#login_form" id="login_pop">เข้าสู่ระบบ</a>
+                <a href="#join_form" id="join_pop">สมัครสมาชิก</a>
+            </div>
+
+        </div>
+
+        <!-- popup form #1 -->
+        <a href="#x" class="overlay" id="login_form"></a>
+        <div class="popup">
+            <h2>ยินดีต้อนรับ!</h2>
+            <p>กรุณากรอก ID และ Password ของคุณ</p>
+            <div>
+                <label for="login">ชื่อผู้ใช้</label>
+                <input type="text" id="login" value="" />
+            </div>
+            <div>
+                <label for="password">รหัสผ่าน</label>
+                <input type="password" id="password" value="" />
+            </div>
+            <input type="button" value="เข้าสู่ระบบ" />
+
+            <a class="close" href="#close"></a>
+        </div>
+
+        <!-- popup form #2 -->
+        <a href="#x" class="overlay" id="join_form"></a>
+        <div class="popup">
+            <h2>สมัครสมาชิก</h2>
+            <p>กรุณากรอกรายละเอียดของคุณที่นี่</p>
+            <div>
+                <label for="email">ชื่อผู้ใช้</label>
+                <input type="text" id="email" value="" />
+            </div>
+            <div>
+                <label for="pass">รหัสผ่าน</label>
+                <input type="password" id="pass" value="" />
+            </div>
+            <div>
+                <label for="firstname">ชื่อ</label>
+                <input type="text" id="firstname" value="" />
+            </div>
+            <div>
+                <label for="lastname">นามสกุล</label>
+                <input type="text" id="lastname" value="" />
+            </div>
+            <input type="button" value="สมัครสมาชิก" />
+
+            <a class="close" href="#close"></a>
+        </div>
+    </body>
+</html>
