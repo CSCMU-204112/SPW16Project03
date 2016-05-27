@@ -1,0 +1,28 @@
+doctype html
+html(lang='en')
+    head
+        title #{title}
+        meta(charset='utf-8')
+        link(rel='stylesheet',type='text/css',href='css/style.css')
+    body
+        div
+            h2.sentence= head
+            form(method = 'post' ,action = 'register')
+                ul
+                li.input
+                    input(name='id',type='text',placeholder='ID')
+                li.input
+                    input(name='pass',type='password',placeholder='Password')
+                li.input
+                    input(name='fname',type='text',placeholder='Firstname')
+                li.input
+                    input(name='lname',type='text',placeholder='Lastname')
+                li.input
+                    input(name='phone',type='tel', pattern='[0-9]{10}', placeholder='Phone number')
+                li.input
+                    input(name='email',type='email',placeholder='Email')
+                li.input
+                    input(name='address',type='text',placeholder='Address')
+                li.input
+                    a.close(href='#close')
+                        button(type='submit') Submit

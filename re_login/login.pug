@@ -1,0 +1,18 @@
+doctype html
+html(lang='en')
+    head
+        title #{title}
+        meta(charset='utf-8')
+        link(rel='stylesheet',type='text/css',href='css/style.css')
+    body
+        div
+            h2.sentence= head
+            form(method = 'post' ,action = 'login')
+                ul
+                li.input
+                    input(name='id',type='text',placeholder='ID')
+                li.input
+                    input(name='pass',type='password',placeholder='Password')
+                li.input
+                    a.close(href='#close')
+                        button(type='submit') Login
