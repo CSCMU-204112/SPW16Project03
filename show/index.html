@@ -1,0 +1,77 @@
+<html lang="en" >
+    <head>
+        <meta charset="utf-8" />
+        <link href="css/layout.css" rel="stylesheet" type="text/css" />
+        <link href="css/modal.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <header>
+        </header>
+
+        <!-- panel with buttons -->
+        <div class="main">
+            <div class="panel">
+                <a href="#login_form" id="login_pop">เข้าสู่ระบบ</a>
+                <a href="#join_form" id="join_pop">สมัครสมาชิก</a>
+            </div>
+
+        </div>
+
+        <!-- popup form #1 -->
+        <a href="#x" class="overlay" id="login_form"></a>
+        <div class="popup">
+            <h2>ยินดีต้อนรับ!</h2>
+            <p>กรุณากรอก ชื่อผู้ใช้ และ รหัสผ่าน ของคุณ</p>
+            <div>
+                <label for="id">ชื่อผู้ใช้</label>
+                <input type="text" name="id" value="" / required>
+            </div>
+            <div>
+                <label for="pass">รหัสผ่าน</label>
+                <input type="password" name="pass" value="" / required>
+            </div>
+            <input type="button" value="เข้าสู่ระบบ" />
+
+            <a class="close" href="#close"></a>
+        </div>
+
+        <!-- popup form #2 -->
+        <a href="#x" class="overlay" id="join_form"></a>
+        <div class="popup">
+            <h2>สมัครสมาชิก</h2>
+            <p>กรุณากรอกรายละเอียดของคุณที่นี่</p>
+            <div>
+                <label for="id">ชื่อผู้ใช้</label>
+                <input type="text" required="true" name="id" value="" />
+            </div>
+            <div>
+                <label for="pass">รหัสผ่าน</label>
+                <input type="password" required="true" name="pass" value="" />
+            </div>
+            <div>
+                <label for="fname">ชื่อ</label>
+                <input type="text" required="true" name="fname" value="" />
+            </div>
+            <div>
+                <label for="lname">นามสกุล</label>
+                <input type="text" required="true" name="lname" value="" />
+            </div>
+            <div>
+                <label for="phone">เบอร์โทรศัพท์</label>
+                <input type="tel" pattern="[0-9]{10}" required="true" name="phone" title="Phone Number" value="" />
+            </div>
+            <div>
+                <label for="email">อีเมล</label>
+                <input type="email" required="true" name="email" value="" />
+            </div>
+            <div>
+                <label for="address">ที่อยู่</label>
+                <textarea rows="4" cols="22" name="address" required="true" form="usrform"></textarea>
+            </div>
+
+            <input type="button" value="สมัครสมาชิก" />
+
+            <a class="close" href="#close"></a>
+        </div>
+    </body>
+</html>
